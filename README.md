@@ -47,16 +47,30 @@ hyprctl reload
 
 ## Keybindings
 
-| Keybinding          | Action                         |
-| ------------------- | ------------------------------ |
-| `Super + T`         | Launch terminal (Kitty)        |
-| `ALT + Q`           | Close focused window           |
-| `Super + Return`    | Open Rofi application launcher |
-| `Super + Q`         | Logout Menu                    |
-| `ALT + V`           | Clipboard Menu                 |
-| `ALT + B`           | Launch Zen Browser             |
-| `CTRL + B`          | Launch Zen Browser             |
-| `Super + Shift + R` | Reload Hyprland config         |
+| Keybinding          | Action                                      |
+| ------------------- | ------------------------------------------- |
+| `Super + T`         | Launch Terminal (Kitty)                     |
+| `ALT + Q`           | Close Focused window                        |
+| `Super + Return`    | Open Rofi application launcher              |
+| `Super + Q`         | Logout Menu                                 |
+| `ALT + V`           | Clipboard Menu                              |
+| `ALT + B`           | Launch Zen Browser                          |
+| `Super + B`         | Launch Zen Browser                          |
+| `Super + l,h,k,j`   | Move Focus Windows                          |
+| `Super + R`         | Active Resize Submap (tile or float window) |
+| `Super + C`         | Reset Resize Submap (tile or float window)  |
+| `Print`             | Screenshot Menu                             |
+| `ALT + R`           | Github Gui Manager                          |
+| `Super + S`         | Toggle Special Workspace                    |
+| `Super + W`         | Move Back From Special Workspace            |
+| `Super + U`         | Toggle Full Screen Mode                     |
+| `Super + ALT + K`   | Move Window Right Workspace (relative)      |
+| `Super + ALT + H`   | Move Window Left Workspace (relative)       |
+| `Super + SHIFT + L` | Move Window Second Monitor > [!NOTE]        |
+| `Super + SHIFT + K` | Move Window Main Monitor                    |
+
+> [!important] Multi Monitors
+> Please set your monitors ID from keybindings.conf
 
 ## Screenshots
 
