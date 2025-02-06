@@ -42,11 +42,11 @@ If you're using a different package manager, install the equivalent packages.
 
 Symlink or copy the config files:
 
-<!-- > [!attention] -->
-<!-- > Please make a backup of your config file -->
-
-> [!NOTE] > [!attention] Title
+> [!ATTENTION]
 > Please make a backup of your config file
+
+<!-- > [!NOTE] > [!attention] Title -->
+<!-- > Please make a backup of your config file -->
 
 ```bash
 cp -r ~/.config/ ~/.config.bak/
