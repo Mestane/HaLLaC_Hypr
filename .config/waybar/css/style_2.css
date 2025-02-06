@@ -1,0 +1,520 @@
+/* @keyframes color-animation { */
+/*     0% { color: #313244 } */
+/*     10% { color: #f9e2af } */
+/*     30% { color: #94e2d5 } */
+/*     50% { color: #f38ba8 } */
+/*     70% { color: #f9e2af } */
+/*     90% { color: #94e2d5 } */
+/*     100% { color: #222234 } */
+/* } */
+/* JetBrainsMono Nerd Font */
+* {
+  font-family:
+    JetBrainsMono,
+    Symbols Nerd Font;
+  font-weight: bold;
+  font-size: 14px;
+  min-height: 0;
+}
+
+/*@define-color bg #1e1e2e;*/
+@define-color bgnew #cba6f7;
+@define-color bg #beabb0;
+@define-color bg2 #181825;
+@define-color bg3 rgba(24,24,37,1.0);
+@define-color bg4 rgba(0,0,0,0.2);
+/*@define-color bg3 rgba(24,24,37,0.5);*/
+@define-color fg #cdd6f4;
+@define-color pink #f5c2e7;
+@define-color green #a6e3a1;
+@define-color fl #f2cdcd;
+@define-color blue #89b4fa;
+@define-color red #eba0ac;
+@define-color vl #cba6f7;
+@define-color yellow #fab387;
+
+window#waybar {
+  background-color: transparent;
+  border-radius: 15px;
+}
+
+#custom-menu {
+  padding: 5px 15px;
+  margin: 5px 5px 5px 10px;
+  color: @vl;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px;
+}
+#custom-menu:hover {
+  color: @fl;
+}
+
+/* #custom-menu { */
+/*   padding: 5px 15px; */
+/*   margin: 5px 5px 5px 10px; */
+/*   color: @bg3; */
+/**/
+/*   background: linear-gradient( */
+/*     118deg, */
+/*     rgba(205, 214, 244, 1) 5%, */
+/*     rgba(243, 139, 168, 1) 5%, */
+/*     rgba(243, 139, 168, 1) 20%, */
+/*     rgba(205, 214, 244, 1) 20%, */
+/*     rgba(205, 214, 244, 1) 40%, */
+/*     rgba(243, 139, 168, 1) 40%, */
+/*     rgba(243, 139, 168, 1) 60%, */
+/*     rgba(205, 214, 244, 1) 60%, */
+/*     rgba(205, 214, 244, 1) 80%, */
+/*     rgba(243, 139, 168, 1) 80%, */
+/*     rgba(243, 139, 168, 1) 95%, */
+/*     rgba(205, 214, 244, 1) 95% */
+/*   ); */
+/**/
+/*   background-size: 200% 300%; */
+/*   animation: gradient_f_nh 4s linear infinite; */
+/*   border: none; */
+/*   border-radius: 20px; */
+/* } */
+
+#workspaces {
+  padding: 2px 15px;
+  margin: 5px;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px;
+  /*	border-radius: 10;*/
+}
+#custom-cputemp {
+  padding: 2px 15px;
+  margin: 5px;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px;
+}
+
+#custom-cputemp:hover {
+  color: @yellow;
+}
+
+/* padding: 5px 18px 5px 15px; */
+/* margin: 5px; */
+#custom-gputemp {
+  padding: 2px 15px;
+  margin: 5px 0px 5px 0px;
+  /* padding: 5px 18px 5px 15px; */
+  /* margin: 5px 0px 5px 0px; */
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  /* border-radius: 0px 20px 20px 0px; */
+  border-radius: 20px;
+}
+
+#custom-gputemp:hover {
+  color: @yellow;
+}
+
+button {
+  box-shadow: inset 0px -3px transparent;
+  border: none;
+  border-radius: 0px;
+}
+button:hover {
+  background: inherit;
+  box-shadow: inset 0px -3px transparent;
+}
+#workspaces button {
+  padding: 0px 5px;
+  background-color: transparent;
+  color: @gf;
+}
+#workspaces button:hover {
+  color: @yellow;
+}
+#workspaces button.focused {
+}
+#workspaces button.urgent {
+}
+
+#window {
+  padding: 5px 15px 2px 15px;
+  /* padding: 2px 15px; */
+  margin: 5px;
+  color: @yellow;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px;
+}
+
+#custom-fullscreen {
+  background-color: @bg3;
+  color: @bgnew;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 2px 10px;
+  font-weight: bold;
+}
+
+#submap {
+  background-color: @bg3;
+  color: @bgnew;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 2px 10px;
+  font-weight: bold;
+}
+
+#cpu {
+  background-color: @bg3;
+  color: @fg;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 2px 10px;
+  font-weight: bold;
+}
+
+#memory {
+  background-color: @bg3;
+  color: @fg;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 2px 10px;
+  font-weight: bold;
+}
+
+#custom-playerctl {
+  padding: 2px 10px;
+  background: @bg3;
+  border-radius: 20px;
+  margin: 5px;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+}
+
+#custom-playerlabel {
+  /* padding: 2px 10px; */
+  padding: 5px 10px 2px 10px;
+  background: transparent;
+  color: @bg2;
+  border-radius: 20px;
+  margin: 5px;
+  font-weight: bold;
+  font-style: normal;
+  /* animation: color-animation 3s infinite linear; */
+}
+
+#custom-weather {
+  padding: 2px 15px;
+  margin: 5px;
+  /* padding: 2px 15px 2px 10px; */
+  /* margin: 5px 5px 5px 0px; */
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px;
+  /* border-radius: 0px 20px 20px 0px; */
+}
+
+#custom-prayerbar {
+  padding: 2px 15px;
+  margin: 5px;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px;
+}
+
+#custom-kitty {
+  padding: 2px 10px 2px 15px;
+  margin: 5px 0px 5px 5px;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px 0px 0px 20px;
+}
+#custom-kitty:hover {
+  color: @yellow;
+}
+
+#custom-nemo {
+  padding: 2px 15px 2px 10px;
+  margin: 5px 5px 5px 0px;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+}
+#custom-nemo:hover {
+  color: @yellow;
+}
+
+#tray {
+  padding: 2px 15px;
+  margin: 5px;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px;
+}
+
+#language {
+  padding: 2px 10px 2px 15px;
+  margin: 5px 0px 5px 5px;
+  /* padding: 2px 15px; */
+  /* margin: 5px; */
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px 0px 0px 20px;
+  /* border-radius: 20px; */
+}
+
+/* #keyboard-state{ */
+/* 	padding: 2 15 2 10; */
+/* 	margin: 5 5 5 0; */
+/* 	border-radius: 0 20 20 0; */
+/* 	color: @fg; */
+/* 	background-color: @bg3; */
+/* 	border: none; */
+
+/* } */
+
+#custom-updates {
+  padding: 2px 15px;
+  margin: 5px;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px;
+}
+
+#custom-caffeine {
+  padding: 2px 20px 2px 13px;
+  margin: 6px;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px;
+}
+
+#bluetooth {
+  padding: 2px 15px;
+  margin: 5px;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px;
+}
+
+/* #bluetooth.off{ */
+/*   background-color:transparent; */
+/*   padding: 0px; */
+/*   margin: 0px; */
+/* } */
+
+#language:hover {
+  color: @yellow;
+}
+
+#pulseaudio {
+  padding: 2px 15px 2px 10px;
+  margin: 5px 5px 5px 0px;
+  /* padding: 2px 15px; */
+  /* margin: 5px; */
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+  /* border-radius: 20px; */
+}
+#pulseaudio.muted {
+  color: @red;
+}
+#pulseaudio:hover {
+  color: @yellow;
+}
+
+#clock {
+  padding: 2px 15px;
+  margin: 5px;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px;
+}
+#clock:hover {
+  color: @yellow;
+}
+
+#network {
+  padding: 2px 15px;
+  margin: 5px;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px;
+}
+
+#network:hover {
+  color: @yellow;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 30%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient_f {
+  0% {
+    background-position: 0% 200%;
+  }
+  50% {
+    background-position: 200% 0%;
+  }
+  100% {
+    background-position: 400% 200%;
+  }
+}
+
+@keyframes gradient_f_nh {
+  0% {
+    background-position: 0% 200%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
+/* #custom-power { */
+/*   padding: 2px 15px; */
+/*   margin: 5px 10px 5px 5px; */
+/*   color: @bg3; */
+/*    background: rgb(205, 214, 244); */
+/*    background: rgb(24, 24, 37); */
+/**/
+/*   background: linear-gradient( */
+/*     118deg, */
+/*     rgba(237, 135, 150, 1) 5%, */
+/*     rgba(237, 135, 150, 1) 20%, */
+/*     rgba(198, 160, 246, 1) 20%, */
+/*     rgba(198, 160, 246, 1) 40%, */
+/*     rgba(138, 173, 244, 1) 40%, */
+/*     rgba(138, 173, 244, 1) 60%, */
+/*     rgba(183, 189, 248, 1) 60%, */
+/*     rgba(183, 189, 248, 1) 80%, */
+/*     rgba(237, 135, 150, 1) 80%, */
+/*     rgba(237, 135, 150, 1) 95% */
+/*   ); */
+/**/
+/*    rgb(166, 218, 149) */
+/*   background-size: 200% 300%; */
+/*   animation: gradient_f_nh 4s linear infinite; */
+/*   border: none; */
+/*   border-radius: 20px; */
+/* } */
+
+#custom-power {
+  padding: 2px 15px;
+  margin: 5px 10px 5px 5px;
+  color: @pink;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px;
+}
+
+#custom-power:hover {
+  color: @red;
+}
+
+#custom-quit {
+  padding: 2px 10px 0px 20px;
+  margin: 5px 0px 5px 0px;
+  color: @yellow;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px 0px 0px 20px;
+}
+
+#custom-lock {
+  padding: 2px 10px 2px 10px;
+  margin: 5px 0px 5px 0px;
+  color: @blue;
+  background-color: @bg3;
+  border: none;
+  border-radius: 0px 0px 0px 0px;
+}
+
+#custom-reboot {
+  /* padding: 0px 15px; */
+  padding: 2px 20px 1px 10px;
+  margin: 5px 0px 5px 0px;
+  color: @green;
+  background-color: @bg3;
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+}
+
+#disk {
+  padding: 2px 15px;
+  margin: 5px;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px;
+}
+
+#custom-screen {
+  padding: 5px 18px 5px 15px;
+  margin: 5px;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px;
+}
+
+#custom-screen:hover {
+  color: @red;
+}
+
+#custom-snip {
+  padding: 5px 8px 5px 13px;
+  margin: 5px 0px 5px 0px;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20px 0px 0px 20px;
+}
+
+#custom-snip:hover {
+  color: @red;
+}
+
+#custom-picker {
+  padding: 5px 16px 5px 13px;
+  margin: 5px 0px 5px 0px;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+}
+
+#custom-picker:hover {
+  color: @red;
+}
+tooltip {
+  background: @bg3;
+  margin: 20px;
+  padding: 15px;
+  border: 20px solid rgba(100, 114, 125, 0);
+  border-radius: 10px;
+}

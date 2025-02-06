@@ -1,0 +1,82 @@
+/* Wofi Style File */
+
+/* General settings */
+#window {
+    background-color: #1e1e2e;
+    border-radius: 15px;
+    padding: 20px;
+    /* margin: auto; */
+    color: #ffffff;
+    font: 10pt "JetBrains Mono Nerd Font";
+}
+
+/* #input{ */
+/*   background-color:# */
+/* } */
+/* #text{ */
+/*   margin: 2px; */
+/* } */
+
+#img {
+  margin-right: 10px;
+}
+/* #F2CDCD */
+#entry {
+    /* background-color: #181825; */
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    outline: none;
+}
+
+
+#entry:focus {
+    border: 1px solid #cba6f7;
+    background-color: #F2CDCD;
+    color: #181825;
+}
+
+#entry:selected {
+  background-color:#F2CDCD;
+  color:#181825;
+}
+
+#list {
+    background-color: transparent;
+    padding: 10px;
+    /* spacing: 10px; */
+    color: #181825;
+}
+
+#listview {
+    /* spacing: 10px; */
+    margin: 10px 0;
+}
+
+#list > div {
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 8px;
+    /* cursor: pointer; */
+}
+
+#list > div:hover {
+    background-color: #cba6f7;
+    color: #1e1e2e;
+}
+
+#list > div:active {
+    background-color: #f2cdcd;
+    color: #1e1e2e;
+}
+
+#message {
+    background-color: #181825;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+

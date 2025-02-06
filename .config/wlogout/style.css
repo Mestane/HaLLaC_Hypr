@@ -1,0 +1,188 @@
+* {
+  background-image: none;
+}
+window {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+button {
+  /* background-color: #1e1e2e; */
+  background-color: #181825;
+  color: #ffffff;
+  outline-style: none;
+  border: none;
+  border-width: 0px;
+  border-radius: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  box-shadow: none;
+  text-shadow: none;
+  animation: gradient_f 20s ease-in infinite;
+}
+
+/* button:focus, */
+/* button:active { */
+/*   background-color: #6f8add; */
+/*   /1* background-color: transparent; *1/ */
+/*   background-size: 40%; */
+/*   /1* animation: gradient_f 20s ease-in infinite; *1/ */
+/*   /1* transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682); *1/ */
+/* } */
+button:focus {
+  background-color: #4a649f;
+
+  /* background-color: transparent; */
+  background-size: 30%;
+  border-radius: 130px;
+  /* animation: gradient_f 20s ease-in infinite; */
+  /* transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682); */
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.28, 1.682);
+}
+
+button:hover {
+  background-color: #4a649f;
+  /* background-color: transparent; */
+  /* background-color: rgba(30, 30, 46, 0.5); */
+  background-size: 30%;
+  /* animation: gradient_f 20s ease-in infinite; */
+  /* transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682); */
+}
+button:hover#lock {
+  background-color: #67d4f1;
+  color: #4f4f5b;
+}
+
+button:hover#logout {
+  color: #4f4f5b;
+  background-color: #faab7c;
+}
+
+button:hover#suspend {
+  color: #4f4f5b;
+  background-color: #fecf7f;
+}
+
+button:hover#shutdown {
+  color: #4f4f5b;
+  background-color: #fd6b85;
+}
+
+button:hover#hibernate {
+  background-color: #fecf7f;
+  color: #4f4f5b;
+}
+
+button:hover#reboot {
+  color: #4f4f5b;
+  background-color: #64c2dc;
+}
+
+button:focus#lock {
+  border-radius: 30px;
+  margin: 130px 0px 130px 150px;
+  background-color: #67d4f1;
+  color: #4f4f5b;
+}
+
+button:focus#logout {
+  border-radius: 30px;
+  margin: 130px 0px 130px 0px;
+  color: #4f4f5b;
+  background-color: #faab7c;
+}
+
+button:focus#suspend {
+  border-radius: 30px;
+  margin: 130px 0px 130px 0px;
+  color: #4f4f5b;
+  background-color: #fecf7f;
+}
+
+button:focus#shutdown {
+  border-radius: 30px;
+  margin: 130px 0px 130px 0px;
+  color: #4f4f5b;
+  background-color: #fd6b85;
+}
+
+button:focus#hibernate {
+  border-radius: 30px;
+  margin: 130px 0px 130px 0px;
+  background-color: #fecf7f;
+  color: #4f4f5b;
+}
+
+button:focus#reboot {
+  border-radius: 30px;
+  margin: 130px 150px 130px 0px;
+  color: #4f4f5b;
+  background-color: #64c2dc;
+}
+
+#lock {
+  background-image: image(
+    url("./icons/lock.png"),
+    url("/usr/share/wlogout/icons/lock.png"),
+    url("/usr/local/share/wlogout/icons/lock.png")
+  );
+  border-radius: 40px 0px 0px 40px;
+  margin: 150px 0px 150px 150px;
+  color: #67d4f1;
+}
+
+#logout {
+  background-image: image(
+    url("./icons/logout.png"),
+    url("/usr/share/wlogout/icons/logout.png"),
+    url("/usr/local/share/wlogout/icons/logout.png")
+  );
+  margin: 150px 0px 150px 0px;
+  border-radius: 0px 0px 0px 0px;
+  color: #faab7c;
+}
+
+#suspend {
+  background-image: image(
+    url("./icons/suspend.png"),
+    url("/usr/share/wlogout/icons/suspend.png"),
+    url("/usr/local/share/wlogout/icons/suspend.png")
+  );
+  margin: 150px 0px 150px 0px;
+  border-radius: 0px 0px 0px 0px;
+  color: #fecf7f;
+}
+
+#hibernate {
+  background-image: image(
+    url("./icons/hibernate.png"),
+    url("/usr/share/wlogout/icons/hibernate.png"),
+    url("/usr/local/share/wlogout/icons/hibernate.png")
+  );
+  margin: 150px 0px 150px 0px;
+  border-radius: 0px 0px 0px 0px;
+  color: #fecf7f;
+}
+
+#shutdown {
+  background-image: image(
+    url("./icons/shutdown.png"),
+    url("/usr/share/wlogout/icons/shutdown.png"),
+    url("/usr/local/share/wlogout/icons/shutdown.png")
+  );
+  margin: 150px 0px 150px 0px;
+  border-radius: 0px 0px 0px 0px;
+  color: #fd6b85;
+}
+
+#reboot {
+  background-image: image(
+    url("./icons/reboot.png"),
+    url("/usr/share/wlogout/icons/reboot.png"),
+    url("/usr/local/share/wlogout/icons/reboot.png")
+  );
+  border-radius: 0px 40px 40px 0px;
+  margin: 150px 150px 150px 0px;
+  color: #64c2dc;
+}

@@ -1,0 +1,62 @@
+# GLOBAL
+#sort=+time
+layer=overlay
+
+
+
+# STYLE
+font=Bebas Neue 11.2
+# width=190
+width=300
+margin=20
+padding=0, 0, 20, 20
+border-size=1
+border-radius=10
+progress-color=#1e1e2e
+# max-icon-size=36
+max-icon-size=128
+icon-path=/home/empilan/.icons/Catppuccin-Mocha-Alt2
+icon-location=left
+format=<b>%s</b>\n%b
+# text-alignment=left
+text-alignment=center
+anchor=top-right
+
+# CRITERA
+## urgency
+[urgency=low]
+font=Bebas Neue Bold 12.2
+default-timeout=2500
+background-color=#1e1e2e
+border-color=#cdd6f4
+text-color=#cdd6f4
+
+[urgency=normal]
+icons=1
+font=Bebas Neue Bold 16.3
+default-timeout=4000
+background-color=#1e1e2e
+border-color=#cdd6f4
+text-color=#fab387
+#on-notify=exec grim /home/owl/home/Music/Strange/Sic Mos - Lullaby [The Cure].mp3
+
+[urgency=critical]
+font=Bebas Neue Bold 21.2
+default-timeout=0
+background-color=#f5c2e7
+border-color=#cdd6f4
+text-color=#1e1e2e
+#on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/dialog-warning.oga
+
+## app-name
+[app-name=grim]
+anchor=top-center
+format=%s\n%b
+group-by=app-name
+default-timeout=3000
+on-notify=exec "Cкриншот сохранен:"
+
+## body
+[body=""]
+format=%s\n%b
+

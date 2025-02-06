@@ -1,0 +1,643 @@
+// -*- mode: jsonc -*-
+[
+  {
+    "position": "top",
+    "layer": "top",
+    "height": 38,
+    //	"width": 1900,
+    //"width": 1920,
+    "margin-top": 3,
+    "margin-bottom": 0,
+    "modules-left": [
+      "custom/menu",
+      "hyprland/workspaces",
+      "group/gtemp",
+      "group/tools",
+      "custom/caffeine",
+      "hyprland/window",
+      "custom/playerctl",
+      "custom/playerlabel",
+    ],
+    "modules-center": [
+      "hyprland/submap",
+      "custom/fullscreen",
+      "cpu",
+      "memory",
+      // "custom/prayerbar",
+      "custom/weather",
+    ],
+    "modules-right": [
+      "tray",
+      "custom/updates",
+      "bluetooth",
+      "hyprland/language",
+      "keyboard-state",
+      "pulseaudio",
+      "clock",
+      "network",
+      "group/gpower",
+    ],
+
+    // "hyprland/workspaces#pacman": {
+    //    "active-only":false,
+    //    "all-outputs": true,
+    //    "format": "{icon}",
+    //    "on-click": "activate",
+    //    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    //    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    //    "show-special": false,
+    //    "persistent-workspaces":{
+    //        "1": [],
+    //        "2": [],
+    //        "3": [],
+    //        "4": [],
+    //        "5": [],
+    //    },
+    //    "format-icons": {
+    //      "active": " 󰮯 ",
+    //      "default": "󰊠",
+    //      "persistent":"󰊠",
+    //      "empty":"󱙝",
+    //      "special":"",
+    //    },
+    //  },
+
+    // "output": ["DP-2", "DP-3"],
+    "output": "DP-2",
+
+    "custom/menu": {
+      "format": "{icon}",
+      // "format": " ",
+      // "format-icons": " ",
+      "format-icons": "  ",
+      "on-click": "~/.config/rofi/launchers/type-6/launcher.sh",
+      "on-click-right": "kitty --execute nvim ~/.config/hypr/",
+      // "on-click":"pgrep -x rofi && pkill -x rofi || ~/.config/rofi/launchers/type-6/launcher.sh",
+      "escape": true,
+      "tooltip": false,
+    },
+
+    "hyprland/workspaces": {
+      // "format": "<span color='#a6e3a1'></span>",
+      "format": "{icon}",
+      //"on-click": "activate",
+      // "all-outputs": true,
+      // "all-outputs": "DP-2",
+      // "show-special": true,
+      "format-icons": {
+        // "active": "󰮯",
+        "urgent": "",
+
+        // 󰮯
+        // "active": "",
+        "active": "<span color='#fab387'></span>",
+        // "active": "<span color='#fab387'>󰮯</span>",
+        "default": "",
+        // "default": "󱙝",
+      },
+      "tooltip": false,
+    },
+
+    "group/gtemp": {
+      "orientation": "inherit",
+      // "interval":7,
+      "drawer": {
+        "transition-duration": 500,
+        // "children-class": "not-power",
+        "transition-left-to-right": true,
+      },
+      "modules": [
+        "custom/cputemp", // First element is the "group leader" and won't ever be hidden
+        "custom/gputemp",
+      ],
+    },
+
+    // Chip:  (\uf2db)
+    // Graphics Card (general computer-related icon):  (\ue266)
+    "custom/cputemp": {
+      "format": "{}°C ",
+      "exec": "~/.config/waybar/scripts/cpu_temp.sh",
+      "interval": 8,
+      "tooltip-format": "Cpu Temp",
+      "on-click": "kitty --execute btop",
+    },
+
+    "custom/gputemp": {
+      "format": "{}°C ",
+      "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits",
+      "interval": 13,
+      "tooltip-format": "Gpu Temp",
+      "on-click": "nvidia-settings",
+    },
+
+    // "custom/snip":{
+    //   "format":"󰹑",
+    //   "on-click": "grim -g \"$(slurp)\" ~/Pictures/screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png",
+    // },
+
+    "hyprland/window": {
+      "format": "{class}",
+      "separate-outputs": true,
+    },
+    // "custom/prayerbar": {
+    //   "format": "<span color='#fab387'>{}</span>",
+    //   "tooltip": true,
+    //   "interval": 60,
+    //   "exec": "~/.config/waybar/scripts/prayerbar/target/release/prayerbar --city Istanbul --country Turkey --method 1",
+    //   "return-type": "json",
+    // },
+
+    "custom/playerctl": {
+      "format": "{icon}",
+      "return-type": "json",
+      // "max-length": 64,
+      "max-length": 48,
+      "exec": "playerctl --player=chromium metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+      "on-click-middle": "playerctl --player=chromium play-pause",
+      "on-click": "playerctl --player=chromium previous",
+      "on-click-right": "playerctl --player=chromium next",
+      "format-icons": {
+        "Playing": "<span color='#E5B9C6'>󰒮 󰐌 󰒭</span>",
+        "Paused": "<span color='#928374'>󰒮 󰏥 󰒭</span>",
+      },
+      "tooltip": false,
+    },
+
+    "custom/playerlabel": {
+      "format": "<span>{}</span>",
+      "return-type": "json",
+      // "max-length": 48,
+      "max-length": 36,
+      "exec": "playerctl --player=chromium metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+      "on-click-middle": "playerctl --player=chromium play-pause",
+      "on-click": "playerctl --player=chromium previous",
+      "on-click-right": "playerctl --player=chromium next",
+      "format-icons": {
+        "Playing": "<span color='#E5B9C6'>󰒮 󰐌 󰒭</span>",
+        "Paused": "<span color='#928374'>󰒮 󰏥 󰒭</span>",
+      },
+      "tooltip": false,
+    },
+
+    "memory": {
+      "format": "<span color='#fab387'>󰾆  {}%</span>",
+      "format-alt": "<span color='#cba6f7'>󰾅 {used}/{total} GiB</span>",
+      "interval": 15,
+    },
+
+    // 󰍛
+    "cpu": {
+      "format": "<span color='#a6e3a1'>󰻠 {usage}%</span>",
+      "format-alt": "<span color='#89b4fa'>󰻠 {avg_frequency} GHz</span>",
+      "interval": 6,
+    },
+
+    "custom/weather": {
+      "format": "<span color='#A6E3A1'>{}</span>",
+      "exec": "~/.config/waybar/scripts/weather.sh",
+      "interval": 100,
+      "tooltip": false,
+    },
+
+    "custom/kitty": {
+      "format": "<span color='#a6e3a1'></span>",
+      "on-click": "exec kitty --title=home",
+      "tooltip": false,
+    },
+
+    "custom/nemo": {
+      "format": "<span color='#89b4fa'>󰉋</span>",
+      "on-click": "kitty --execute ranger /home/",
+      "tooltip": false,
+    },
+    "hyprland/submap": {
+      // "format": "✌️ {}",
+      "format": "󰩨  {}",
+      "max-length": 8,
+      "tooltip": false,
+    },
+    "custom/fullscreen": {
+      "format": "<span color='#cba6f7'>󰊓</span>",
+      "exec": "(hyprctl activewindow | grep 'fullscreenClient' | awk '{print $2}' )",
+      "exec-if": "[[ $(hyprctl activewindow | grep 'fullscreenClient' | awk '{print $2}') != 0 ]]",
+      "interval": 4,
+      "tooltip": false,
+    },
+
+    "tray": {
+      "icon-size": 13,
+      "spacing": 10,
+    },
+
+    "hyprland/language": {
+      "format": "<span color='#fab387'>󰌏 </span> {}",
+      // "on-click": "hyprctl switchxkblayout sonix-usb-device-keyboard next",
+      "format-en": "EN",
+      "format-tr": "TR",
+    },
+
+    // "keyboard-state":{
+    //   "capslock": true,
+    //   "format": "{name} <span color='#fab387'> {icon}</span>",
+    //   "format-icons": {
+    //   "locked": "",
+    //   "unlocked": ""
+    //   },
+    // },
+
+    //"format": "{} Update(s)",
+    //"on-click": "alacritty -e paru -Syu && notify-send 'The system has been updated'"
+    // "exec": "checkupdates-with-aur | wc -l",
+    // "exec-if": "[[ $(checkupdates-with-aur | wc -l) != 0 ]]",
+
+    "custom/updates": {
+      // "format": "<span color='#89b4fa'>󰻌</span>",
+      "format": "<big><span color='#89b4fa'> </span></big><span color='#fab387'>{}</span>",
+      // "format": "  {}",
+      "exec": "checkupdates-with-aur | grep -v -f <(awk '/^IgnorePkg/ {for (i=2; i<=NF; i++) print $i}' /etc/pacman.conf) | wc -l",
+      "exec-if": "[[ $(checkupdates-with-aur | grep -v -f <(awk '/^IgnorePkg/ {for (i=2; i<=NF; i++) print $i}' /etc/pacman.conf) | wc -l) != 0 ]]",
+      "interval": 3600,
+      // "exec-if": "exit 0",
+      "tooltip": false,
+      "signal": 8,
+      // "max-length": 5,
+      // "min-length": 3,
+    },
+
+    //
+    //
+    //
+    //
+    // 
+    // 󰅶
+    // 
+    // 
+    // 󰻌
+    // "idle_inhibitor": {
+    //  "format": "{icon}",
+    // "format-icons": {
+    // "activated": "",
+    //    "deactivated": "",
+    // },
+    // "timeout": 30.5,
+    // },
+
+    "custom/caffeine": {
+      "format": "<span color='#E5B9C6'></span>",
+      "interval": 7,
+      "exec": "~/.local/bin/check_caffeine.sh",
+      "on-click": "~/.local/bin/hypridle_toggle.sh",
+      "tooltip-format": "Caffeine",
+    },
+
+    "pulseaudio": {
+      // "scroll-step": 5,
+      // "reverse-scrolling": 1,
+      "format": "<span color='#fab387'>{icon}</span> {volume}%  <span color='#DAADCF'></span>{format_source}",
+      "format-muted": "<span color='#fab387'>{icon}</span> <span color='#DAADCF'></span>{format_source}",
+      "format-source": "<span color='#fab387'> </span> {volume}%",
+      "format-source-muted": "<span color='#fab387'>  </span>",
+      // "format": "<span color='#fab387'>{icon}</span> {volume}%  <span color='#DAADCF'></span>{format_source}",
+      // "format-muted": "<span color='#fab387'> </span>",
+      // "format-muted": "<span color='#fab387'>{icon}</span> <span color='#DAADCF'></span>{format_source}",
+      // "format-muted": "<span color='#fab387'> </span> <span color='#DAADCF'></span>{format_source}",
+
+      // "format-bluetooth": "{volume}% {icon} {format_source}",
+      // "format-bluetooth-muted": " {icon} {format_source}",
+      "format-icons": {
+        "alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo": "󰋎 ",
+        "alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo-muted": "󰋐 ",
+        "hdmi": "󰽟 ",
+        "hdmi-muted": "󰽠 ",
+        "default": [" ", " ", " "],
+        "default-muted": " ",
+        "speaker": "󰽟 ",
+        "headphone": " ",
+        "phone": " ",
+        "phone-muted": " ",
+        "hands-free": " ",
+        "headset": " ",
+        "hifi": " ",
+        "portable": " ",
+        "car": " ",
+      },
+      "on-click": "pavucontrol",
+      "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+      "on-click-middle": "~/.config/waybar/scripts/toggle-sink.sh",
+      "scroll-step": 5,
+      "tooltip": false,
+      // "on-click-right": "pactl set-source-mute alsa_input.usb-3142_fifine_Microphone_000000000000-00.mono-fallback toggle",
+    },
+
+    "clock": {
+      "format": "<span color='#fab387'> </span> {:%H:%M}",
+      "tooltip-format": "<big><span color='#cdd6f4'>{:%Y %B}</span></big>\n<tt><small>{calendar}</small></tt>",
+      "format-alt": "<span color='#eba0ac'> </span> <span color='#cdd6f4'>{:%Y-%m-%d}</span>",
+
+      "calendar": {
+        "mode": "month",
+        "mode-mon-col": 3,
+        "weeks-pos": "right",
+        "on-scroll": 1,
+        "format": {
+          "months": "<span color='#cdd6f4'><b>{}</b></span>",
+          "days": "<span color='#cdd6f4'><b>{}</b></span>",
+          "weeks": "<span color='#f5c2e7'><b>W{}</b></span>",
+          "weekdays": "<span color='#f5c2e7'><b>{}</b></span>",
+          "today": "<span color='#eba0ac'><b><u>{}</u></b></span>",
+        },
+      },
+      "actions": {
+        "on-click-right": "mode",
+        "on-click-forward": "tz_up",
+        "on-click-backward": "tz_down",
+        "on-scroll-up": "shift_up",
+        "on-scroll-down": "shift_down",
+      },
+    },
+
+    // "format": "<span color='#89b4fa'>󰻌</span>",
+
+    "disk": {
+      // "format": "{used} / {total}  ",
+      "format": "<span color='#f5c2e7'> </span> <span color='#f5c2e7'>{}%</span>",
+      "tooltip-format": "{used} / {total} used",
+      // "tooltip": false,
+      "path": "/",
+    },
+
+    // "disk": {
+    //   // "format": "<span color='#ca9ee6'> </span> {}%",
+    //   "format": "  {}%",
+    //   "tooltip-format": "{used} / {total} used",
+    // },
+
+    // "bluetooth": {
+    //   "format": "",
+    //   "format-on": "<span color='#89B4FA'></span>",
+    //   "format-connected": "<span color='#A6E3A1'>{device_alias} 󰂱</span>",
+    //   "format-disable": "",
+    //   "format-off": "",
+    //   "format-no-controller": "",
+    //   "on-click": "~/.local/bin/bt_toggle",
+    //   // "tooltip-format-connected": "{device_alias}"
+    //   // "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}"
+    //   // "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+    //   // "tooltip": false
+    //   // "format": "",
+    //   // "exec": "systemctl is-active bluetooth.service",
+    //   // "interval": 5,
+    //   // "format-off":"󰂲",
+    //   // "format-disabled":"",
+    //   //"format-disabled": "",
+    //   // "controller":"",
+    //   // "format-connected": "󰂱 {num_connections}",
+    //   // "format-no-controller": "{}",
+    //   // "tooltip-format": "{controller_alias}\t{controller_address}",
+    //   // "exec": "bluetoothctl show | grep Powered"
+    //   //"on-click": "blueman-manager"
+    // },
+
+    "bluetooth": {
+      // "format": "",
+      // "format-on": "<span color='#89B4FA'></span>",
+      // "format-connected": "<span color='#A6E3A1'>{device_alias} 󰂱</span>",
+      // "format-disable": "",
+      // "format-off": "",
+      // "format-no-controller": "",
+      // "on-click": "~/.local/bin/bt_toggle",
+
+      "format": "󰂰",
+      "format-on": "<span color='#89B4FA'></span>",
+      "format-connected": "<span color='#A6E3A1'>{device_alias} 󰂱</span>",
+      "format-disabled": "󰂲",
+      "format-off": "",
+      "format-no-controller": "",
+
+      "tooltip-format": "{num_connections} connected",
+      "tooltip-format-disabled": "Bluetooth Disabled",
+      "tooltip-format-connected": "{num_connections} connected\n{device_enumerate}",
+      "tooltip-format-enumerate-connected": "{device_alias}",
+      "tooltip-format-enumerate-connected-battery": "{device_alias}: {device_battery_percentage}%",
+      "on-click": "~/.config/waybar/scripts/bluetooth-menu.sh",
+      "on-click-right": "kitty --title '󰂯  Bluetooth TUI' bash -c bluetui",
+    },
+
+    // "network": {
+    //   "format-wifi": " ",
+    //   "format-ethernet":" ",
+    //   "tooltip-format": "{ipaddr}",
+    //   "tooltip-format-wifi": "{essid} ({signalStrength}%)  | {ipaddr}",
+    //   "tooltip-format-ethernet": "{ifname} 🖧 | {ipaddr}",
+    //   "on-click": "networkmanager_dmenu"
+    // },
+
+    "network": {
+      "interface": "eno1",
+      "format-ethernet": "<span color='#fab387'>  </span> Connected",
+      "format-disconnected": "<span color='#e58282'></span>",
+      "tooltip-format-ethernet": "{ifname}",
+      "on-click": "nm-connection-editor",
+      // "tooltip":false,
+    },
+
+    //"custom/power": {
+    //	"format": "{icon}",
+    //	"format-icons": " ",
+    ////	"on-click": "~/.config/rofi/powermenu/type-4/powermenu.sh",
+    //	"on-click": "wlogout -P DP-2 --protocol layer-shell -b 6",
+    //	"escape": true,
+    //	"tooltip": false
+    //},
+
+    "group/tools": {
+      "orientation": "inherit",
+      "drawer": {
+        "transition-duration": 500,
+        "children-class": "not-power",
+        "transition-left-to-right": true,
+      },
+      "modules": [
+        "custom/screen", // First element is the "group leader" and won't ever be hidden
+        "custom/snip",
+        "custom/picker",
+      ],
+    },
+    "custom/screen": {
+      "format": "󰹑",
+      "on-click": "nwg-displays",
+      "on-click-right": "~/.local/bin/toggle_monitor.sh",
+      "tooltip-format": "Screen",
+      // "on-click": "~/.local/bin/toggle_monitor.sh",
+    },
+    "custom/snip": {
+      "format": "",
+      "on-click": "~/.config/rofi/launchers/type-3/take_screenshot.sh",
+      "tooltip-format": "Screenshot",
+    },
+    "custom/picker": {
+      "format": "",
+      "on-click": "hyprpicker -a",
+      "tooltip-format": "Hyprpicker",
+    },
+
+    // ------------------------------------------------
+
+    "group/gpower": {
+      "orientation": "inherit",
+      "drawer": {
+        "transition-duration": 500,
+        "children-class": "not-power",
+        "transition-left-to-right": false,
+      },
+      "modules": [
+        "custom/power", // First element is the "group leader" and won't ever be hidden
+        "custom/quit",
+        "custom/lock",
+        "custom/reboot",
+      ],
+    },
+    "custom/quit": {
+      "format": "󰍃",
+      "tooltip": false,
+      "on-click": "loginctl terminate-user $USER",
+    },
+    "custom/lock": {
+      "format": "󰍀",
+      "tooltip": false,
+      "on-click": "hyprlock --immediate",
+    },
+    // 󰍀
+
+    "custom/reboot": {
+      "format": "",
+      "tooltip": false,
+      "on-click": "systemctl reboot",
+    },
+    "custom/power": {
+      "format": " ",
+      "tooltip": false,
+      // "on-click": "wlogout -P DP-2 --protocol layer-shell -b 6",
+      "on-click": "wlogout -l ~/.config/wlogout/layout_3 -C ~/.config/wlogout/style_3.css -P DP-2 --protocol layer-shell -b 2",
+    },
+
+    "escape": true,
+    //"exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+  },
+  {
+    "position": "top",
+    "layer": "top",
+    "height": 38,
+    "margin-top": 3,
+    "margin-bottom": 0,
+
+    "modules-left": ["custom/menu", "hyprland/workspaces", "hyprland/window"],
+    "modules-center": [
+      "hyprland/submap",
+      "custom/fullscreen",
+      "custom/weather",
+      "custom/kitty",
+      "custom/nemo",
+    ],
+
+    "modules-right": ["custom/updates", "hyprland/language", "pulseaudio"],
+    "output": "DP-3",
+
+    "custom/menu": {
+      "format": "{icon}",
+      "format-icons": "  ",
+      "on-click": "~/.config/rofi/launchers/type-6/launcher.sh",
+      "on-click-right": "kitty --execute nvim ~/.config/hypr/",
+      "escape": true,
+      "tooltip": false,
+    },
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "format-icons": {
+        "urgent": "",
+        "active": "<span color='#fab387'></span>",
+        "default": "",
+      },
+      "tooltip": false,
+    },
+    "hyprland/submap": {
+      // "format": "✌️ {}",
+      "format": "󰩨  {}",
+      "max-length": 8,
+      "tooltip": false,
+    },
+    "custom/fullscreen": {
+      "format": "<span color='#cba6f7'>󰊓</span>",
+      "exec": "(hyprctl activewindow | grep 'fullscreenClient' | awk '{print $2}' )",
+      "exec-if": "[[ $(hyprctl activewindow | grep 'fullscreenClient' | awk '{print $2}') != 0 ]]",
+      "interval": 5,
+      "tooltip": false,
+    },
+
+    "custom/weather": {
+      "format": "<span color='#A6E3A1'>{}</span>",
+      "exec": "~/.config/waybar/scripts/weather.sh",
+      "interval": 120,
+      "tooltip": false,
+    },
+
+    "custom/kitty": {
+      "format": "<span color='#a6e3a1'></span>",
+      "on-click": "exec kitty --title=home",
+      "tooltip": false,
+    },
+
+    "custom/nemo": {
+      "format": "<span color='#89b4fa'>󰉋</span>",
+      "on-click": "kitty --execute ranger /home/",
+      "tooltip": false,
+    },
+
+    "custom/updates": {
+      "format": "<big><span color='#89b4fa'> </span></big><span color='#fab387'>{}</span>",
+      "interval": 3600,
+      "exec": "checkupdates-with-aur | grep -v -f <(awk '/^IgnorePkg/ {for (i=2; i<=NF; i++) print $i}' /etc/pacman.conf) | wc -l",
+      "exec-if": "[[ $(checkupdates-with-aur | grep -v -f <(awk '/^IgnorePkg/ {for (i=2; i<=NF; i++) print $i}' /etc/pacman.conf) | wc -l) != 0 ]]",
+      "tooltip": false,
+      "signal": 8,
+    },
+    "hyprland/window": {
+      "format": "{class}",
+      "separate-outputs": true,
+    },
+    "hyprland/language": {
+      "format": "<span color='#fab387'>󰌏 </span> {}",
+      // "on-click": "hyprctl switchxkblayout sonix-usb-device-keyboard next",
+      "format-en": "EN",
+      "format-tr": "TR",
+    },
+    "pulseaudio": {
+      "format": "<span color='#fab387'>{icon}</span> {volume}%  <span color='#DAADCF'></span>{format_source}",
+      "format-muted": "<span color='#fab387'>{icon}</span> <span color='#DAADCF'></span>{format_source}",
+      "format-source": "<span color='#fab387'> </span> {volume}%",
+      "format-source-muted": "<span color='#fab387'>  </span>",
+      "format-icons": {
+        "alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo": "󰋎 ",
+        "alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo-muted": "󰋐 ",
+        "hdmi": "󰽟 ",
+        "hdmi-muted": "󰽠 ",
+        "default": [" ", " ", " "],
+        "default-muted": " ",
+        "speaker": "󰽟 ",
+        "headphone": " ",
+        "phone": " ",
+        "phone-muted": " ",
+        "hands-free": " ",
+        "headset": " ",
+        "hifi": " ",
+        "portable": " ",
+        "car": " ",
+      },
+      "on-click": "pavucontrol",
+      "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+      "on-click-middle": "~/.config/waybar/scripts/toggle-sink.sh",
+      "scroll-step": 5,
+      "tooltip": false,
+    },
+  },
+]

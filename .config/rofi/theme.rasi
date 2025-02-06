@@ -1,0 +1,29 @@
+/* 
+  bg - background
+  fg - foreground
+  br - border
+*/
+
+// style-1 colors
+// * {
+// main-bg:        #1e1e2e;
+// main-fg:        #cdd6f4;
+// main-br:        #585b70;
+// input-bg:       #313244;
+// select-bg:      #45475a;
+// select-fg:      #f5e0dc;
+//
+// }
+
+// style-10 colors
+* {
+    // main-bg:            #11111b;
+    main-bg:            #181825;
+    main-fg:            #cdd6f4;
+    main-br:            #cba6f7;
+    main-ex:            #f5e0dc;
+    select-bg:          #b4befe;
+    select-fg:          #11111b;
+    separatorcolor:     transparent;
+    border-color:       transparent;
+}

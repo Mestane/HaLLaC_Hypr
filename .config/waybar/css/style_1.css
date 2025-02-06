@@ -1,0 +1,213 @@
+* {
+  font-family:
+    JetBrainsMono,
+    Symbols Nerd Font;
+  font-weight: bold;
+  font-size: 14px;
+  min-height: 0;
+}
+
+/*@define-color bg #1e1e2e;*/
+@define-color bg #beabb0;
+@define-color bg2 #181825;
+@define-color bg3 rgba(24,24,37,1.0);
+@define-color bg4 rgba(0,0,0,0.2);
+/*@define-color bg3 rgba(24,24,37,0.5);*/
+@define-color fg #cdd6f4;
+@define-color pink #f5c2e7;
+@define-color green #a6e3a1;
+@define-color fl #f2cdcd;
+@define-color blue #89b4fa;
+@define-color red #eba0ac;
+@define-color vl #cba6f7;
+@define-color yellow #fab387;
+
+window#waybar {
+  background-color: transparent;
+  border-radius: 15;
+}
+
+#custom-menu {
+  padding: 5 15;
+  margin: 5 5 5 10;
+
+  color: @vl;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20;
+}
+#custom-menu:hover {
+  color: @fl;
+}
+
+#workspaces {
+  padding: 2 15;
+  margin: 5;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20;
+  /*	border-radius: 10;*/
+}
+button {
+  box-shadow: inset 0 -3px transparent;
+  border: none;
+  border-radius: 0;
+}
+button:hover {
+  background: inherit;
+  box-shadow: inset 0 -3px transparent;
+}
+#workspaces button {
+  padding: 0 5px;
+  background-color: transparent;
+  color: @gf;
+}
+#workspaces button:hover {
+  color: @yellow;
+}
+#workspaces button.focused {
+}
+#workspaces button.urgent {
+}
+
+#window {
+  padding: 2 15;
+  margin: 5;
+  color: @yellow;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20;
+}
+
+#custom-cmus,
+#custom-weather {
+  padding: 2 15;
+  margin: 5;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20;
+}
+#custom-cmus:hover {
+  color: @yellow;
+}
+
+#custom-kitty {
+  padding: 2 10 2 15;
+  margin: 5 0 5 5;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20 0 0 20;
+}
+#custom-kitty:hover {
+  color: @yellow;
+}
+
+#custom-nemo {
+  padding: 2 15 2 10;
+  margin: 5 5 5 0;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 0 20 20 0;
+}
+#custom-nemo:hover {
+  color: @yellow;
+}
+
+#tray {
+  padding: 2 15;
+  margin: 5;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20;
+}
+
+#language {
+  padding: 2 15;
+  margin: 5;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20;
+}
+#language:hover {
+  color: @yellow;
+}
+
+#pulseaudio {
+  padding: 2 15;
+  margin: 5;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20;
+}
+#pulseaudio.muted {
+  color: @red;
+}
+#pulseaudio:hover {
+  color: @yellow;
+}
+
+#clock {
+  padding: 2 15;
+  margin: 5;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20;
+}
+#clock:hover {
+  color: @yellow;
+}
+
+/* #custom-power { */
+/* 	padding: 2 15; */
+/* 	margin: 5 10 5 5; */
+/* 	color: @pink; */
+/* 	background-color: @bg3; */
+/* 	border: none; */
+/* 	border-radius: 20; */
+/* } */
+/* #custom-power:hover { */
+/* 	color: @red; */
+/* } */
+
+#group-gpower {
+  padding: 2 15;
+  margin: 5 10 5 5;
+  color: @pink;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20;
+}
+
+#group-gpower .not-power {
+  padding: 2px 15px;
+  margin: 5 10 5 5;
+  color: @pink;
+  background-color: @bg3;
+  border: none;
+  border-radius: 20;
+}
+
+/* #group-gpower .not-power:hover{ */
+/*     background-color: #4c566a; */
+/*     color: #eceff4; */
+/* } */
+
+/* #group-gpower .not-power:first-child { */
+/*     font-weight: bold; /1* Daha kalın yazı stili *1/ */
+/*     color: #bf616a; /1* Özel renk *1/ */
+/* } */
+
+tooltip {
+  background: @bg;
+  margin: 20px;
+  padding: 15px;
+  border: 20px solid rgba(100, 114, 125, 0);
+  border-radius: 10px;
+}

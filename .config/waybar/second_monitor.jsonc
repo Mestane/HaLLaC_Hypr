@@ -1,0 +1,37 @@
+{
+    "layer": "top",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": [
+        {
+            "name": "clock",
+            "monitor": "DP-2" // Sadece birinci monitörde göster
+        },
+        {
+            "name": "mediaplayer",
+            "monitor": "DP-3" // Sadece ikinci monitörde göster
+        }
+    ],
+    "modules-right": ["custom/power"],
+
+    "custom/power": {
+        "format": "{icon}",
+        "format-icons": "",
+        "on-click": "~/.config/rofi/powermenu/type-4/powermenu.sh",
+        "tooltip": false
+    },
+
+    "custom/clock": {
+        "exec": "date +'%H:%M:%S'",
+        "interval": 1,
+        "tooltip": false
+    },
+
+    "custom/mediaplayer": {
+        "exec": "playerctl metadata --format '{{artist}} - {{title}}'",
+        "interval": 5,
+        "tooltip": false
+    },
+
+    "style": "/home/username/.config/waybar/style.css"
+}
+
