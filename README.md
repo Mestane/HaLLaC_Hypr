@@ -43,8 +43,8 @@ If you're using a different package manager, install the equivalent packages.
 Symlink or copy the config files:
 
 > [!warning]
-> DIKKAT ! = )
-> Please make a backup of your config file
+> DIKKAT !
+> Please make a backup of your config file = )
 
 > [!ATTENTION]
 
