@@ -30,9 +30,9 @@ yay -S waybar rofi-wayland wl-clipboard cliphist
 ```
 
 > [!NOTE] >
-> **\_Install All Hypr ecosystem\_**\
+> **_Install All Hypr ecosystem_**
 
-**_And install all hypr ecosystem_**
+<!-- **_And install all hypr ecosystem_** -->
 
 ### 2. Clone the Repository
 
