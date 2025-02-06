@@ -29,6 +29,9 @@ Ensure you have the required packages installed:
 yay -S waybar rofi-wayland wl-clipboard cliphist
 ```
 
+> [!NOTE]
+> Install All Hypr ecosystem
+
 **_And install all hypr ecosystem_**
 
 ### 2. Clone the Repository
