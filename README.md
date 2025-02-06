@@ -21,19 +21,19 @@ This repository contains my personal Hyprland configuration files. It includes s
 
 ## Installation
 
-### 1. Clone the Repository
-
-```bash
-cd ~/
-git clone https://github.com/Mestane/HaLLaC_Hypr.git
-```
-
-### 2. Install Dependencies
+### 1. Install Dependencies
 
 Ensure you have the required packages installed:
 
 ```bash
 yay -S waybar rofi-wayland wl-clipboard cliphist
+```
+
+### 2. Clone the Repository
+
+```bash
+cd ~/
+git clone https://github.com/Mestane/HaLLaC_Hypr.git
 ```
 
 If you're using a different package manager, install the equivalent packages.
