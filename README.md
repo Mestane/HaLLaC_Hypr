@@ -44,7 +44,7 @@ Symlink or copy the config files:
 
 > [!warning]
 > DIKKAT !
-> Please make a backup of your config file = )
+> Please make a backup of your config file :)
 
 <!-- > [!NOTE] > [!attention] Title -->
 <!-- > Please make a backup of your config file -->
