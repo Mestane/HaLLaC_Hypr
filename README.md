@@ -62,8 +62,9 @@ hyprctl reload
 
 _Add your screenshots here to showcase your setup._
 
-![Launcher](./screenshots/launcher.png)
-![Rofi Apps Killer](./screenshots/rofi_killer_gui.png)
+| Launcher                                | Rofi Apps Killer                                       | Github GUI                              | Menu                                        |
+| --------------------------------------- | ------------------------------------------------------ | --------------------------------------- | ------------------------------------------- |
+| ![Launcher](./screenshots/launcher.png) | ![Rofi Apps Killer](./screenshots/rofi_killer_gui.png) | ![Github](./screenshots/github_gui.png) | ![Dashboard](./screenshots/log_menu_01.png) |
 
 ## Customization
 
