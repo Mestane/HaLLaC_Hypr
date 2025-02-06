@@ -4,10 +4,12 @@ This repository contains my personal Hyprland configuration files. It includes s
 
 ## Screenshots
 
-| Launcher                                | Rofi Apps Killer                                       | Github GUI                              | Wlogout Menu                                |
-| --------------------------------------- | ------------------------------------------------------ | --------------------------------------- | ------------------------------------------- |
-| ![Launcher](./screenshots/launcher.png) | ![Rofi Apps Killer](./screenshots/rofi_killer_gui.png) | ![Github](./screenshots/github_gui.png) | ![Dashboard](./screenshots/log_menu_01.png) |
-| ![Launcher](./screenshots/launcher.png) | ![Rofi Apps Killer](./screenshots/rofi_killer_gui.png) | ![Github](./screenshots/github_gui.png) | ![Dashboard](./screenshots/log_menu_01.png) |
+| Launcher                                         | Rofi Apps Killer                                       | Github GUI                                   | Wlogout Menu 1                              |
+| ------------------------------------------------ | ------------------------------------------------------ | -------------------------------------------- | ------------------------------------------- |
+| ![Launcher](./screenshots/launcher.png)          | ![Rofi Apps Killer](./screenshots/rofi_killer_gui.png) | ![Github](./screenshots/github_gui.png)      | ![Dashboard](./screenshots/log_menu_01.png) |
+| Wlogout Menu 2                                   | Waybar                                                 | Screenshot Menu                              | Wlogout Menu                                |
+| ---------------------------------------          | ------------------------------------------------------ | ---------------------------------------      | ------------------------------------------- |
+| ![Wlogout Menu 2](./screenshots/log_menu_02.png) | ![Waybar](./screenshots/waybar.png)                    | ![Github](./screenshots/screenshot_menu.png) | ![Dashboard](./screenshots/log_menu_01.png) |
 
 ## Features
 
