@@ -42,8 +42,10 @@ If you're using a different package manager, install the equivalent packages.
 
 Symlink or copy the config files:
 
-> [!ATTENTION]
+> [!NOTE] > [!warning] DIKKAT ! = )
 > Please make a backup of your config file
+
+> [!ATTENTION]
 
 <!-- > [!NOTE] > [!attention] Title -->
 <!-- > Please make a backup of your config file -->
