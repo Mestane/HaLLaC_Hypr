@@ -2,6 +2,12 @@
 
 This repository contains my personal Hyprland configuration files. It includes settings for window management, keybindings, themes, and additional tweaks for an optimized workflow.
 
+## Screenshots
+
+| Launcher                                | Rofi Apps Killer                                       | Github GUI                              | Menu                                        |
+| --------------------------------------- | ------------------------------------------------------ | --------------------------------------- | ------------------------------------------- |
+| ![Launcher](./screenshots/launcher.png) | ![Rofi Apps Killer](./screenshots/rofi_killer_gui.png) | ![Github](./screenshots/github_gui.png) | ![Dashboard](./screenshots/log_menu_01.png) |
+
 ## Features
 
 - **Custom Keybindings**: Optimized keybindings for navigation and productivity.
@@ -75,14 +81,6 @@ hyprctl reload
 
 <!-- > [!important] Multi Monitors -->
 <!-- > Please set your monitors ID from keybindings.conf -->
-
-## Screenshots
-
-_Add your screenshots here to showcase your setup._
-
-| Launcher                                | Rofi Apps Killer                                       | Github GUI                              | Menu                                        |
-| --------------------------------------- | ------------------------------------------------------ | --------------------------------------- | ------------------------------------------- |
-| ![Launcher](./screenshots/launcher.png) | ![Rofi Apps Killer](./screenshots/rofi_killer_gui.png) | ![Github](./screenshots/github_gui.png) | ![Dashboard](./screenshots/log_menu_01.png) |
 
 ## Customization
 
