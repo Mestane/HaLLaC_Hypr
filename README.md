@@ -29,8 +29,7 @@ Ensure you have the required packages installed:
 yay -S waybar rofi-wayland wl-clipboard cliphist
 ```
 
-> [!NOTE]
-> **_Install All Hypr ecosystem_**
+> [!NOTE] > **_Install All Hypr Ecosystem_**
 
 <!-- **_And install all hypr ecosystem_** -->
 
