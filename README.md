@@ -1,4 +1,4 @@
-# Hyprland Configuration
+# HaLLaC_Hypr Configuration
 
 This repository contains my personal Hyprland configuration files. It includes settings for window management, keybindings, themes, and additional tweaks for an optimized workflow.
 
@@ -14,6 +14,7 @@ This repository contains my personal Hyprland configuration files. It includes s
 ### 1. Clone the Repository
 
 ```bash
+cd ~/
 git clone https://github.com/Mestane/HaLLaC_Hypr.git
 ```
 
@@ -32,7 +33,7 @@ If you're using a different package manager, install the equivalent packages.
 Symlink or copy the config files:
 
 ```bash
-cd HaLLaC_Hypr
+cd ~/HaLLaC_Hypr
 cp -r .config/hypr/ ~/.config/hypr
 ```
 
@@ -60,6 +61,9 @@ hyprctl reload
 ## Screenshots
 
 _Add your screenshots here to showcase your setup._
+
+![Launcher](./screenshots/launcher.png)
+![Rofi Apps Killer](./screenshots/rofi_killer_gui.png)
 
 ## Customization
 
