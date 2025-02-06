@@ -4,8 +4,9 @@ This repository contains my personal Hyprland configuration files. It includes s
 
 ## Screenshots
 
-| Launcher                                | Rofi Apps Killer                                       | Github GUI                              | Menu                                        |
+| Launcher                                | Rofi Apps Killer                                       | Github GUI                              | Wlogout Menu                                |
 | --------------------------------------- | ------------------------------------------------------ | --------------------------------------- | ------------------------------------------- |
+| ![Launcher](./screenshots/launcher.png) | ![Rofi Apps Killer](./screenshots/rofi_killer_gui.png) | ![Github](./screenshots/github_gui.png) | ![Dashboard](./screenshots/log_menu_01.png) |
 | ![Launcher](./screenshots/launcher.png) | ![Rofi Apps Killer](./screenshots/rofi_killer_gui.png) | ![Github](./screenshots/github_gui.png) | ![Dashboard](./screenshots/log_menu_01.png) |
 
 ## Features
@@ -58,10 +59,11 @@ hyprctl reload
 | `Super + T`         | Launch Terminal (Kitty)                     |
 | `ALT + Q`           | Close Focused window                        |
 | `Super + Return`    | Open Rofi application launcher              |
-| `Super + Q`         | Logout Menu                                 |
+| `Super + Q`         | Wlogout Menu                                |
 | `ALT + V`           | Clipboard Menu                              |
-| `ALT + B`           | Launch Zen Browser                          |
+| `Super + E`         | Launch Thunar                               |
 | `Super + B`         | Launch Zen Browser                          |
+| `Super + Tab`       | Change Focus And Bring It To The Top        |
 | `Super + l,h,k,j`   | Move Focus Windows                          |
 | `Super + R`         | Active Resize Submap (tile or float window) |
 | `Super + C`         | Reset Resize Submap (tile or float window)  |
@@ -70,6 +72,7 @@ hyprctl reload
 | `Super + S`         | Toggle Special Workspace                    |
 | `Super + W`         | Move Back From Special Workspace            |
 | `Super + U`         | Toggle Full Screen Mode                     |
+| `Super + V`         | Toggle Floating Window                      |
 | `Super + ALT + K`   | Move Window Right Workspace (relative)      |
 | `Super + ALT + H`   | Move Window Left Workspace (relative)       |
 | `Super + SHIFT + L` | Move Window Second Monitor                  |
