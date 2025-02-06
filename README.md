@@ -69,7 +69,7 @@ hyprctl reload
 | `Super + SHIFT + L` | Move Window Second Monitor                  |
 | `Super + SHIFT + K` | Move Window Main Monitor                    |
 
-> [!NOTE] > [!important] Multi Monitors
+> [!important]
 > If you use Multi Monitor
 > please set your monitors ID from keybindings.conf
 
