@@ -42,6 +42,13 @@ If you're using a different package manager, install the equivalent packages.
 
 Symlink or copy the config files:
 
+> [!attention]
+> Please make a backup of your config file
+
+```bash
+cp -r ~/.config/ ~/.config.bak/
+```
+
 ```bash
 cd ~/HaLLaC_Hypr
 cp -r .config/hypr/ ~/.config/hypr
