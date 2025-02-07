@@ -26,7 +26,7 @@ This repository contains my personal Hyprland configuration files. It includes s
 Ensure you have the required packages installed:
 
 ```bash
-yay -S waybar rofi-wayland wl-clipboard cliphist tmux
+yay -S waybar rofi-wayland wl-clipboard cliphist tmux pavucontrol
 ```
 
 If you're using a different package manager, install the equivalent packages.
