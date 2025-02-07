@@ -18,6 +18,7 @@ This repository contains my personal Hyprland configuration files. It includes s
 - **Waybar Integration**: A customized status bar with essential system information.
 - **Performance Tweaks**: Configurations for smooth performance on Wayland.
 - **Hyprlock Setup**: Lock screen integration.
+- **Rofi Tools**: Integration of tools with Rofi.
 
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=28&duration=2500&pause=3000&color=CCA9DD&background=8979FF00&width=435&lines=Installation)](https://git.io/typing-svg)
 
@@ -26,7 +27,7 @@ This repository contains my personal Hyprland configuration files. It includes s
 Ensure you have the required packages installed:
 
 ```bash
-yay -S waybar rofi-wayland wl-clipboard cliphist tmux pavucontrol
+yay -S waybar rofi-wayland wl-clipboard cliphist tmux pavucontrol bluetui
 ```
 
 If you're using a different package manager, install the equivalent packages.
