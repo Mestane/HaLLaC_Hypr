@@ -43,7 +43,7 @@ cd ~/
 git clone https://github.com/Mestane/HaLLaC_Hypr.git
 ```
 
-> [!ATTENTION]  
+> [!CAUTION]  
 > Please copy the files inside the Script folder to the .local/bin/ folder.
 
 ### 3. Apply Configuration
