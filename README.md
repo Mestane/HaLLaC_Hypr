@@ -2,7 +2,7 @@
 
 This repository contains my personal Hyprland configuration files. It includes settings for window management, keybindings, themes, and additional tweaks for an optimized workflow.
 
-## Screenshots
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=28&duration=2500&pause=3000&color=CCA9DD&background=8979FF00&width=435&lines=Screenshots)](https://git.io/typing-svg)
 
 | Launcher                                | Rofi Apps Killer                                       | Github GUI                              | Wlogout Menu 1                              |
 | --------------------------------------- | ------------------------------------------------------ | --------------------------------------- | ------------------------------------------- |
@@ -19,7 +19,7 @@ This repository contains my personal Hyprland configuration files. It includes s
 - **Performance Tweaks**: Configurations for smooth performance on Wayland.
 - **Hyprlock Setup**: Lock screen integration.
 
-## Installation
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=28&duration=2500&pause=3000&color=CCA9DD&background=8979FF00&width=435&lines=Installation)](https://git.io/typing-svg)
 
 ### 1. Install Dependencies
 
@@ -71,7 +71,7 @@ After setting up, restart Hyprland for changes to take effect:
 hyprctl reload
 ```
 
-## Keybindings
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=28&duration=2500&pause=3000&color=CCA9DD&background=8979FF00&width=435&lines=Keybindings)](https://git.io/typing-svg)
 
 | Keybinding          | Action                                      |
 | ------------------- | ------------------------------------------- |
