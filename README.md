@@ -26,11 +26,11 @@ This repository contains my personal Hyprland configuration files. It includes s
 Ensure you have the required packages installed:
 
 ```bash
-yay -S waybar rofi-wayland wl-clipboard cliphist
+yay -S waybar rofi-wayland wl-clipboard cliphist tmux
 ```
 
 > [!NOTE]  
-> **_Install All Hypr Ecosystem_**
+> **_Install All Hypr Ecosystem_** [Hypr Ecosystem](https://wiki.hyprland.org/Hypr-Ecosystem/)
 
 <!-- **_And install all hypr ecosystem_** -->
 
@@ -47,12 +47,9 @@ If you're using a different package manager, install the equivalent packages.
 
 Symlink or copy the config files:
 
-> [!warning]
+> [!WARNING]
 > DIKKAT !
 > Please make a backup of your config file :)
-
-<!-- > [!NOTE] > [!attention] Title -->
-<!-- > Please make a backup of your config file -->
 
 ```bash
 cp -r ~/.config/ ~/.config.bak/
@@ -97,12 +94,9 @@ hyprctl reload
 | `Super + SHIFT + L` | Move Window Second Monitor                  |
 | `Super + SHIFT + K` | Move Window Main Monitor                    |
 
-> [!important]
+> [!IMPORTANT]
 > If you use Multi Monitor
 > please set your monitors ID from **_keybindings.conf_**
-
-<!-- > [!important] Multi Monitors -->
-<!-- > Please set your monitors ID from keybindings.conf -->
 
 ## Customization
 
