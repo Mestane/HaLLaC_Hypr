@@ -29,6 +29,8 @@ Ensure you have the required packages installed:
 yay -S waybar rofi-wayland wl-clipboard cliphist tmux
 ```
 
+If you're using a different package manager, install the equivalent packages.
+
 > [!NOTE]  
 > **_Install All Hypr Ecosystem_** [Hypr Ecosystem](https://wiki.hyprland.org/Hypr-Ecosystem/)
 
@@ -41,7 +43,8 @@ cd ~/
 git clone https://github.com/Mestane/HaLLaC_Hypr.git
 ```
 
-If you're using a different package manager, install the equivalent packages.
+> [!ATTENTION]  
+> Please copy the files inside the Script folder to the .local/bin/ folder.
 
 ### 3. Apply Configuration
 
