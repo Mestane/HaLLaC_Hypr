@@ -1,4 +1,4 @@
-# HaLLaC_Hypr Configuration
+# [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=500&color=B566FF&width=300&lines=HaLLaC_Hypr+Configuration)](https://git.io/typing-svg)
 
 This repository contains my personal Hyprland configuration files. It includes settings for window management, keybindings, themes, and additional tweaks for an optimized workflow.
 
