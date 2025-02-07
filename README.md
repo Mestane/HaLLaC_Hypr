@@ -12,7 +12,7 @@ This repository contains my personal Hyprland configuration files. It includes s
 | ------------------------------------------------ | ----------------------------------- | -------------------------------------------- | ---------------------------------------------- |
 | ![Wlogout Menu 2](./screenshots/log_menu_02.png) | ![Waybar](./screenshots/waybar.png) | ![Github](./screenshots/screenshot_menu.png) | ![Bluetooth](./screenshots/bluetooth_menu.png) |
 
-## Features
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=28&duration=2500&pause=3000&color=CCA9DD&background=8979FF00&width=435&lines=Features)](https://git.io/typing-svg)
 
 - **Custom Keybindings**: Optimized keybindings for navigation and productivity.
 - **Waybar Integration**: A customized status bar with essential system information.
