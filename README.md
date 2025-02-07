@@ -101,6 +101,6 @@ hyprctl reload
 > If you use Multi Monitor
 > please set your monitors ID from **_keybindings.conf_**
 
-## Customization
+<!-- ## Customization -->
 
 Feel free to modify the configurations according to your preferences. Contributions and suggestions are welcome!
