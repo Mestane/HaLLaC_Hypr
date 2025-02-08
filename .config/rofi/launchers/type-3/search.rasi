@@ -1,0 +1,113 @@
+configuration {
+	modi:                       "drun";
+    show-icons:                 false;
+}
+
+/*****----- Global Properties -----*****/
+* {
+    font:                        "JetBrains Mono Nerd Font 10";
+    background:                  #1e1e2e;
+    background-alt:              #181825;
+    foreground:                  #FFFFFF;
+    selected:                    #f2cdcd;
+    active:                      #cba6f7;
+    urgent:                      #8D0083;
+    
+}
+
+/*****----- Main Window -----*****/
+window {
+    /* properties for window widget */
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       500px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    /* properties for all widgets */
+    enabled:                     true;
+    border-radius:               15px;
+    cursor:                      "default";
+    background-color:            @background;
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     0px;
+    background-color:            transparent;
+    //orientation:                 horizontal;
+    //children:                    [ "imagebox", "listbox" ];
+}
+
+
+dummy {
+    background-color:            transparent;
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                     true;
+    spacing:                     10px;
+    padding:                     15px;
+    border-radius:               10px;
+    background-color:            @background-alt;
+    text-color:                  @foreground;
+    children:                    [ "textbox-prompt-colon", "entry" ];
+}
+textbox-prompt-colon {
+    enabled:                     false;
+    expand:                      false;
+    str:                         " ";
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+entry {
+    enabled:                     true;
+    background-color:            inherit;
+    text-color:                  inherit;
+    cursor:                      text;
+    placeholder:                 "   DuckDuckGo Search";
+    placeholder-color:           inherit;
+}
+
+/*****----- Mode Switcher -----*****/
+// mode-switcher{
+//     enabled:                     true;
+//     spacing:                     20px;
+//     background-color:            transparent;
+//     text-color:                  @foreground;
+// }
+// button {
+//     padding:                     15px;
+//     border-radius:               10px;
+//     background-color:            @background-alt;
+//     text-color:                  inherit;
+//     cursor:                      pointer;
+// }
+// button selected {
+//     background-color:            @selected;
+//     text-color:                  @background;
+// }
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     false;
+    columns:                     1;
+    lines:                       8;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     10px;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      "default";
+}
+

@@ -102,6 +102,16 @@ hyprctl reload
 > If you use Multi Monitor
 > please set your monitors ID from **_keybindings.conf_**
 
-<!-- ## Customization -->
+## Customization
+
+| Browser Search                                        |
+| ----------------------------------------------------- |
+| ![Browser Search](./screenshots/browser_launcher.png) |
+
+> [!INFO]
+>
+> - If the entry starts with "https://", "http://", "www." or contains extensions like
+>   ".com", ".net", ".org", ".io", it opens directly.
+> - If it's not the URL, it's searching on DuckDuckGo.
 
 Feel free to modify the configurations according to your preferences. Contributions and suggestions are welcome!
