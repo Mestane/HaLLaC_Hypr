@@ -108,9 +108,9 @@ hyprctl reload
 | ----------------------------------------------------- |
 | ![Browser Search](./screenshots/browser_launcher.png) |
 
-> [!NOTE]
-> - If the entry starts with "https://", "http://", "www." or contains extensions like
->   ".com", ".net", ".org", ".io", it opens directly.
-> - If it's not the URL, it's searching on DuckDuckGo.
+> [!INFO]
+> If the entry starts with "https://", "http://", "www." or contains extensions like
+> ".com", ".net", ".org", ".io", it opens directly.
+> If it's not the URL, it's searching on DuckDuckGo.
 
 Feel free to modify the configurations according to your preferences. Contributions and suggestions are welcome!
