@@ -29,7 +29,7 @@ get_icon() {
     echo $icon
 }
 
-KEY="REMOVED"
+KEY="your API key"
 CITY="İstanbul"
 UNITS="metric"
 SYMBOL="°"
