@@ -96,7 +96,7 @@ hyprctl reload
 | `Super + ALT + K`   | Move Window Right Workspace (relative)      |
 | `Super + ALT + H`   | Move Window Left Workspace (relative)       |
 | `Super + SHIFT + L` | Move Window Second Monitor                  |
-| `Super + SHIFT + K` | Move Window Main Monitor                    |
+| `Super + SHIFT + H` | Move Window Main Monitor                    |
 
 > [!IMPORTANT]
 > If you use Multi Monitor
