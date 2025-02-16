@@ -104,9 +104,9 @@ hyprctl reload
 
 ## Customization
 
-| Browser Search                                        |
-| ----------------------------------------------------- |
-| ![Browser Search](./screenshots/browser_launcher.png) |
+| Browser Search                                        | Hyprlock                                |
+| ----------------------------------------------------- | --------------------------------------- |
+| ![Browser Search](./screenshots/browser_launcher.png) | ![Hyprlock](./screenshots/hyprlock.png) |
 
 > [!TIP]
 >
