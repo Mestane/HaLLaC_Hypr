@@ -108,7 +108,7 @@ hyprctl reload
 | ----------------------------------------------------- |
 | ![Browser Search](./screenshots/browser_launcher.png) |
 
-> [!INFO]
+> [!TIP]
 >
 > - If the entry starts with "https://", "http://", "www." or contains extensions like
 >   ".com", ".net", ".org", ".io", it opens directly.
