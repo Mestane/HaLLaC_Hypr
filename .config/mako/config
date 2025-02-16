@@ -54,9 +54,10 @@ anchor=top-center
 format=%s\n%b
 group-by=app-name
 default-timeout=3000
-on-notify=exec "Cкриншот сохранен:"
 
 ## body
 [body=""]
 format=%s\n%b
 
+[mode=do-not-disturb]
+invisible=1

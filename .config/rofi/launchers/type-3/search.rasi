@@ -69,7 +69,7 @@ entry {
     background-color:            inherit;
     text-color:                  inherit;
     cursor:                      text;
-    placeholder:                 "   DuckDuckGo Search";
+    placeholder:                 " 🌐 Search with DuckDuckGo or enter address";
     placeholder-color:           inherit;
 }
 
