@@ -27,7 +27,7 @@ This repository contains my personal Hyprland configuration files. It includes s
 Ensure you have the required packages installed:
 
 ```bash
-yay -S waybar rofi-wayland wl-clipboard cliphist tmux pavucontrol bluetui
+yay -S waybar rofi-wayland wl-clipboard cliphist tmux pavucontrol bluetui gpu-screen-recorder
 ```
 
 If you're using a different package manager, install the equivalent packages.
@@ -104,14 +104,20 @@ hyprctl reload
 
 ## Customization
 
-| Browser Search                                        | Hyprlock                                |
-| ----------------------------------------------------- | --------------------------------------- |
-| ![Browser Search](./screenshots/browser_launcher.png) | ![Hyprlock](./screenshots/hyprlock.png) |
+| Browser Search                                        | Hyprlock                                | Fast Screen Record                                  |
+| ----------------------------------------------------- | --------------------------------------- | --------------------------------------------------- |
+| ![Browser Search](./screenshots/browser_launcher.png) | ![Hyprlock](./screenshots/hyprlock.png) | ![Fast Screen Record](./screenshots/fastrecord.png) |
 
 > [!TIP]
 >
 > - If the entry starts with "https://", "http://", "www." or contains extensions like
 >   ".com", ".net", ".org", ".io", it opens directly.
 > - If it's not the URL, it's searching on DuckDuckGo.
+> - If you want to record your screen, don't forget to install `gpu-screen-recorder`
+
+```bash
+yay -S gpu-screen-recorder
+
+```
 
 Feel free to modify the configurations according to your preferences. Contributions and suggestions are welcome!

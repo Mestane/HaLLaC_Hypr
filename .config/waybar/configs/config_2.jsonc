@@ -15,6 +15,7 @@
       "group/tools",
       "custom/caffeine",
       "hyprland/window",
+      "custom/recordfast",
       "custom/playerctl",
       "custom/playerlabel",
     ],
@@ -128,6 +129,13 @@
       "interval": 13,
       "tooltip-format": "Gpu Temp",
       "on-click": "nvidia-settings",
+    },
+
+    "custom/recordfast": {
+      "format": "<big><span color='#f38ba8'>󰑋</span></big>",
+      "exec": "~/.local/bin/check_record.sh",
+      "interval": 3,
+      "tooltip": false,
     },
 
     // "custom/snip":{

@@ -22,6 +22,7 @@
 @define-color bg #beabb0;
 @define-color bg2 #181825;
 @define-color bg3 rgba(24,24,37,1.0);
+@define-color bg5 rgba(243, 139, 168,1.0);
 @define-color bg4 rgba(0,0,0,0.2);
 /*@define-color bg3 rgba(24,24,37,0.5);*/
 @define-color fg #cdd6f4;
@@ -97,6 +98,15 @@ window#waybar {
 
 #custom-cputemp:hover {
   color: @yellow;
+}
+
+#custom-recordfast {
+  padding: 2px 15px;
+  margin: 5px;
+  background-color: @bg3;
+  border: none;
+  border-radius: 10px;
+  animation: blink 0.8s infinite alternate;
 }
 
 /* padding: 5px 18px 5px 15px; */
@@ -392,6 +402,18 @@ button:hover {
   }
   100% {
     background-position: 200% 200%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
