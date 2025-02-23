@@ -97,6 +97,7 @@ hyprctl reload
 | `Super + ALT + H`   | Move Window Left Workspace (relative)       |
 | `Super + SHIFT + L` | Move Window Second Monitor                  |
 | `Super + SHIFT + H` | Move Window Main Monitor                    |
+| `Super + ALT + R`   | Start Fast Screen Record                    |
 
 > [!IMPORTANT]
 > If you use Multi Monitor

@@ -1,13 +1,3 @@
-/* @keyframes color-animation { */
-/*     0% { color: #313244 } */
-/*     10% { color: #f9e2af } */
-/*     30% { color: #94e2d5 } */
-/*     50% { color: #f38ba8 } */
-/*     70% { color: #f9e2af } */
-/*     90% { color: #94e2d5 } */
-/*     100% { color: #222234 } */
-/* } */
-/* JetBrainsMono Nerd Font */
 * {
   font-family:
     JetBrainsMono,
@@ -45,38 +35,11 @@ window#waybar {
   color: @vl;
   background-color: @bg3;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 #custom-menu:hover {
   color: @fl;
 }
-
-/* #custom-menu { */
-/*   padding: 5px 15px; */
-/*   margin: 5px 5px 5px 10px; */
-/*   color: @bg3; */
-/**/
-/*   background: linear-gradient( */
-/*     118deg, */
-/*     rgba(205, 214, 244, 1) 5%, */
-/*     rgba(243, 139, 168, 1) 5%, */
-/*     rgba(243, 139, 168, 1) 20%, */
-/*     rgba(205, 214, 244, 1) 20%, */
-/*     rgba(205, 214, 244, 1) 40%, */
-/*     rgba(243, 139, 168, 1) 40%, */
-/*     rgba(243, 139, 168, 1) 60%, */
-/*     rgba(205, 214, 244, 1) 60%, */
-/*     rgba(205, 214, 244, 1) 80%, */
-/*     rgba(243, 139, 168, 1) 80%, */
-/*     rgba(243, 139, 168, 1) 95%, */
-/*     rgba(205, 214, 244, 1) 95% */
-/*   ); */
-/**/
-/*   background-size: 200% 300%; */
-/*   animation: gradient_f_nh 4s linear infinite; */
-/*   border: none; */
-/*   border-radius: 20px; */
-/* } */
 
 #workspaces {
   padding: 2px 15px;
@@ -84,8 +47,7 @@ window#waybar {
   color: @fg;
   background-color: @bg3;
   border: none;
-  border-radius: 20px;
-  /*	border-radius: 10;*/
+  border-radius: 10px;
 }
 #custom-cputemp {
   padding: 2px 15px;
@@ -93,7 +55,7 @@ window#waybar {
   color: @fg;
   background-color: @bg3;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 #custom-cputemp:hover {
@@ -109,18 +71,13 @@ window#waybar {
   animation: blink 0.8s infinite alternate;
 }
 
-/* padding: 5px 18px 5px 15px; */
-/* margin: 5px; */
 #custom-gputemp {
   padding: 2px 15px;
   margin: 5px 0px 5px 0px;
-  /* padding: 5px 18px 5px 15px; */
-  /* margin: 5px 0px 5px 0px; */
   color: @fg;
   background-color: @bg3;
   border: none;
-  /* border-radius: 0px 20px 20px 0px; */
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 #custom-gputemp:hover {
@@ -156,13 +113,13 @@ button:hover {
   color: @yellow;
   background-color: @bg3;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 #custom-fullscreen {
   background-color: @bg3;
   color: @bgnew;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 5px;
   padding: 2px 10px;
   font-weight: bold;
@@ -171,7 +128,7 @@ button:hover {
 #submap {
   background-color: @bg3;
   color: @bgnew;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 5px;
   padding: 2px 10px;
   font-weight: bold;
@@ -180,7 +137,7 @@ button:hover {
 #cpu {
   background-color: @bg3;
   color: @fg;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 5px;
   padding: 2px 10px;
   font-weight: bold;
@@ -189,7 +146,7 @@ button:hover {
 #memory {
   background-color: @bg3;
   color: @fg;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 5px;
   padding: 2px 10px;
   font-weight: bold;
@@ -198,7 +155,7 @@ button:hover {
 #custom-playerctl {
   padding: 2px 10px;
   background: @bg3;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 5px;
   font-weight: normal;
   font-style: normal;
@@ -206,27 +163,22 @@ button:hover {
 }
 
 #custom-playerlabel {
-  /* padding: 2px 10px; */
   padding: 5px 10px 2px 10px;
   background: transparent;
   color: @bg2;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 5px;
   font-weight: bold;
   font-style: normal;
-  /* animation: color-animation 3s infinite linear; */
 }
 
 #custom-weather {
   padding: 2px 15px;
   margin: 5px;
-  /* padding: 2px 15px 2px 10px; */
-  /* margin: 5px 5px 5px 0px; */
   color: @fg;
   background-color: @bg3;
   border: none;
-  border-radius: 20px;
-  /* border-radius: 0px 20px 20px 0px; */
+  border-radius: 10px;
 }
 
 #custom-prayerbar {
@@ -235,7 +187,7 @@ button:hover {
   color: @fg;
   background-color: @bg3;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 #custom-kitty {
@@ -244,7 +196,7 @@ button:hover {
   color: @fg;
   background-color: @bg3;
   border: none;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 10px 0px 0px 10px;
 }
 #custom-kitty:hover {
   color: @yellow;
@@ -256,7 +208,7 @@ button:hover {
   color: @fg;
   background-color: @bg3;
   border: none;
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 0px 10px 10px 0px;
 }
 #custom-nemo:hover {
   color: @yellow;
@@ -267,30 +219,17 @@ button:hover {
   margin: 5px;
   background-color: @bg3;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 #language {
   padding: 2px 10px 2px 15px;
   margin: 5px 0px 5px 5px;
-  /* padding: 2px 15px; */
-  /* margin: 5px; */
   color: @fg;
   background-color: @bg3;
   border: none;
-  border-radius: 20px 0px 0px 20px;
-  /* border-radius: 20px; */
+  border-radius: 10px 0px 0px 10px;
 }
-
-/* #keyboard-state{ */
-/* 	padding: 2 15 2 10; */
-/* 	margin: 5 5 5 0; */
-/* 	border-radius: 0 20 20 0; */
-/* 	color: @fg; */
-/* 	background-color: @bg3; */
-/* 	border: none; */
-
-/* } */
 
 #custom-updates {
   padding: 2px 15px;
@@ -298,7 +237,7 @@ button:hover {
   color: @fg;
   background-color: @bg3;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 #custom-caffeine {
@@ -307,7 +246,7 @@ button:hover {
   color: @fg;
   background-color: @bg3;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 #bluetooth {
@@ -316,14 +255,8 @@ button:hover {
   color: @fg;
   background-color: @bg3;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 }
-
-/* #bluetooth.off{ */
-/*   background-color:transparent; */
-/*   padding: 0px; */
-/*   margin: 0px; */
-/* } */
 
 #language:hover {
   color: @yellow;
@@ -337,8 +270,7 @@ button:hover {
   color: @fg;
   background-color: @bg3;
   border: none;
-  border-radius: 0px 20px 20px 0px;
-  /* border-radius: 20px; */
+  border-radius: 0px 10px 10px 0px;
 }
 #pulseaudio.muted {
   color: @red;
@@ -353,7 +285,7 @@ button:hover {
   color: @fg;
   background-color: @bg3;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 #clock:hover {
   color: @yellow;
@@ -365,7 +297,7 @@ button:hover {
   color: @fg;
   background-color: @bg3;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 #network:hover {
@@ -417,41 +349,13 @@ button:hover {
   }
 }
 
-/* #custom-power { */
-/*   padding: 2px 15px; */
-/*   margin: 5px 10px 5px 5px; */
-/*   color: @bg3; */
-/*    background: rgb(205, 214, 244); */
-/*    background: rgb(24, 24, 37); */
-/**/
-/*   background: linear-gradient( */
-/*     118deg, */
-/*     rgba(237, 135, 150, 1) 5%, */
-/*     rgba(237, 135, 150, 1) 20%, */
-/*     rgba(198, 160, 246, 1) 20%, */
-/*     rgba(198, 160, 246, 1) 40%, */
-/*     rgba(138, 173, 244, 1) 40%, */
-/*     rgba(138, 173, 244, 1) 60%, */
-/*     rgba(183, 189, 248, 1) 60%, */
-/*     rgba(183, 189, 248, 1) 80%, */
-/*     rgba(237, 135, 150, 1) 80%, */
-/*     rgba(237, 135, 150, 1) 95% */
-/*   ); */
-/**/
-/*    rgb(166, 218, 149) */
-/*   background-size: 200% 300%; */
-/*   animation: gradient_f_nh 4s linear infinite; */
-/*   border: none; */
-/*   border-radius: 20px; */
-/* } */
-
 #custom-power {
   padding: 2px 15px;
   margin: 5px 10px 5px 5px;
   color: @pink;
   background-color: @bg3;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 #custom-power:hover {
@@ -464,7 +368,7 @@ button:hover {
   color: @yellow;
   background-color: @bg3;
   border: none;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 10px 0px 0px 10px;
 }
 
 #custom-lock {
@@ -483,7 +387,7 @@ button:hover {
   color: @green;
   background-color: @bg3;
   border: none;
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 0px 10px 10px 0px;
 }
 
 #disk {
@@ -492,7 +396,7 @@ button:hover {
   color: @fg;
   background-color: @bg3;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 #custom-screen {
@@ -501,7 +405,7 @@ button:hover {
   color: @fg;
   background-color: @bg3;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 #custom-screen:hover {
@@ -514,7 +418,7 @@ button:hover {
   color: @fg;
   background-color: @bg3;
   border: none;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 10px 0px 0px 10px;
 }
 
 #custom-snip:hover {
@@ -527,7 +431,7 @@ button:hover {
   color: @fg;
   background-color: @bg3;
   border: none;
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 0px 10px 10px 0px;
 }
 
 #custom-picker:hover {
