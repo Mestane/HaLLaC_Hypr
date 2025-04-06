@@ -249,6 +249,15 @@ button:hover {
   border-radius: 10px;
 }
 
+#custom-mail {
+  padding: 2px 20px 2px 13px;
+  margin: 6px;
+  color: @fg;
+  background-color: @bg3;
+  border: none;
+  border-radius: 10px;
+}
+
 #bluetooth {
   padding: 2px 15px;
   margin: 5px;

@@ -199,6 +199,14 @@
       "on-click": "~/.local/bin/hypridle_toggle.sh",
       "tooltip-format": "Caffeine",
     },
+    "custom/mail": {
+      "format": "{} 󰺻",
+      "exec": "$HOME/.config/waybar/scripts/checkgmail.py",
+      "interval": 120,
+      // "on-click": "google-chrome-stable https://mail.google.com/mail/u/0/#inbox ; pkill -SIGRTMIN+9 waybar",
+      "signal": 9,
+      "tooltip": false,
+    },
 
     "pulseaudio": {
       "format": "<span color='#fab387'>{icon}</span> {volume}%  <span color='#DAADCF'></span>{format_source}",
